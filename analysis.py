@@ -83,8 +83,10 @@ def group_comparison(df: pd.DataFrame, feature_cols: list, config: dict) -> pd.D
         )
 
         # Rank-biserial correlation as effect size
+        # Positive value = biomarker higher in progressors
+        # Formula: (U / (n1*n2)) * 2 - 1
         n1, n2 = len(prog_vals), len(non_prog_vals)
-        rbc = 1 - (2 * stat) / (n1 * n2)
+        rbc = (stat / (n1 * n2)) * 2 - 1
 
         results.append({
             "Feature": col,
