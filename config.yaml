@@ -1,0 +1,78 @@
+# ============================================================
+# neuro-biomarker-analysis configuration file
+# ============================================================
+# Edit this file to point the pipeline at your own data.
+# You do not need to edit any other files.
+# Lines starting with # are comments and are ignored.
+# ============================================================
+
+
+# ------------------------------------------------------------
+# DATA FILES
+# ------------------------------------------------------------
+
+# Your main feature file (biomarkers, proteomics, clinical measures)
+# One row per patient, one column per feature
+features_file: data/example_features.csv
+
+# Your outcome file containing follow-up scores
+outcome_file: data/example_outcome.csv
+
+
+# ------------------------------------------------------------
+# COLUMN NAMES
+# Must exactly match the column headers in your CSV files.
+# ------------------------------------------------------------
+
+# The column that uniquely identifies each patient
+patient_id_column: PATIENT_ID
+
+# The column containing baseline score
+baseline_score_column: SCORE_BASELINE
+
+# The column containing follow-up score
+followup_score_column: SCORE_FOLLOWUP
+
+
+# ------------------------------------------------------------
+# PROGRESSION DEFINITION
+# Patients with change > threshold are "progressors"
+# ------------------------------------------------------------
+
+progression_threshold: 0
+
+
+# ------------------------------------------------------------
+# ANALYSIS SETTINGS
+# ------------------------------------------------------------
+
+# Number of top biomarkers to show in box plots and results table
+top_n_biomarkers: 20
+
+# Multiple testing correction method
+# Options: fdr_bh (Benjamini-Hochberg), bonferroni, none
+correction_method: fdr_bh
+
+# Significance threshold (after correction)
+alpha: 0.05
+
+# Minimum effect size to highlight (Cohen's d or rank-biserial correlation)
+min_effect_size: 0.2
+
+
+# ------------------------------------------------------------
+# LABELS
+# ------------------------------------------------------------
+
+negative_class_label: Non-progressor
+positive_class_label: Progressor
+
+# Label for your biomarkers in plots (e.g. "Protein", "Biomarker", "Feature")
+biomarker_label: Biomarker
+
+
+# ------------------------------------------------------------
+# OUTPUT SETTINGS
+# ------------------------------------------------------------
+
+output_directory: outputs

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: neuro-biomarker-analysis
+message: >-
+  If you use this software in your research, please cite it
+  using the metadata from this file.
+type: software
+version: 1.0.0
+date-released: "2026-04-08"
+authors:
+  - family-names: Piepkorn
+    given-names: Cameron
+    affiliation: Independent Researcher
+abstract: >-
+  neuro-biomarker-analysis is a transparent statistical analysis
+  pipeline for identifying biomarkers associated with neurological
+  disease progression. It computes Spearman correlations and
+  Mann-Whitney U group comparisons between progressors and
+  non-progressors, applies Benjamini-Hochberg FDR correction for
+  multiple testing, and generates publication-ready volcano plots,
+  box plots, and results tables. Designed for clinical researchers
+  with no coding background.
+keywords:
+  - parkinson's disease
+  - neurological progression
+  - biomarker analysis
+  - statistics
+  - spearman correlation
+  - mann-whitney
+  - volcano plot
+  - clinical research
+license: MIT
+repository-code: "https://github.com/CameronPiepkorn/neuro-biomarker-analysis"
+url: "https://github.com/CameronPiepkorn/neuro-biomarker-analysis"
