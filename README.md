@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19478292.svg)](https://doi.org/10.5281/zenodo.19478292)
 # neuro-biomarker-analysis
 
 A transparent statistical analysis pipeline for identifying biomarkers associated with neurological disease progression.
