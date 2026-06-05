@@ -149,7 +149,7 @@ Each dot is one biomarker. Position on the x-axis shows the correlation directio
 
 ## Companion tool
 
-For machine learning-based progression prediction using the same data format, see the companion repository: https://github.com/CameronPiepkorn/neuro-progression-ml
+For machine learning-based progression prediction using the same data format, see the companion repository: https://github.com/CameronCat/neuro-progression-ml
 
 ---
 
